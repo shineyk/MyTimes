@@ -1,11 +1,40 @@
 html {
 	font-family: Helvetica;
 	background-color: white;
-	text-align: center;
 }
 
-header {
+.header {
 	font-family: Verdana;
 	font-size: 14px;
 	font-weight: bold;
+	display: inline-flex;
+	padding-bottom: 10px;
+	border-bottom: 1px solid black;
+	align-items: center;
+	width: 100%;
+	justify-content: flex-start;	
+}
+
+.header #logo {
+	color: MediumAquamarine;
+	display: flex;
+	justify-content: center;
+	padding-left: 10px;
+}
+
+.header .nav {
+	display: flex;
+	justify-content: flex-end;
+	width: 100%;
+}
+
+.header ul {
+	display: flex;
+}
+
+.header li {
+	list-style: none;
+	display: inline-block;
+	border: 1px solid red;
+	text-decoration: underline;
 }
