@@ -1,5 +1,4 @@
 html {
-	font-family: Helvetica;
 	background-color: white;
 }
 
@@ -7,34 +6,127 @@ html {
 	font-family: Verdana;
 	font-size: 14px;
 	font-weight: bold;
-	display: inline-flex;
+	display: flex;
 	padding-bottom: 10px;
 	border-bottom: 1px solid black;
 	align-items: center;
+	position: fixed;
+	background-color: white;
+	top: 0;
 	width: 100%;
-	justify-content: flex-start;	
+	z-index: 10;
+}
+
+.header .left {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	width: 60%;
 }
 
 .header #logo {
 	color: MediumAquamarine;
-	display: flex;
-	justify-content: center;
 	padding-left: 10px;
 }
 
-.header .nav {
+.header img {
+	padding-left: 10px;
+}
+
+.header .right {
 	display: flex;
-	justify-content: flex-end;
-	width: 100%;
+	justify-content: flex-start;
+	width: 40%;
+}
+
+.header .right .nav {
+	display: flex;
+	width: 90%;
 }
 
 .header ul {
 	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 100%;
 }
 
 .header li {
 	list-style: none;
 	display: inline-block;
-	border: 1px solid red;
 	text-decoration: underline;
+}
+
+.main {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	position: relative;
+	top: 100px;
+	z-index: 5;
+	width: 90%;
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: 20px;
+}
+
+h2 {
+	font-size:16px;
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+	font-family: Georgia;
+	font-size: 17px;
+	color: black;
+ }
+
+.column p {
+}
+
+.column.large {
+    width: 630px;
+}
+
+.column.medium {
+    width: 300px;
+}
+
+.column.small {
+    width: 240px;
+}
+
+.story {
+	font-family: Georgia;
+	font-weight: bold;
+	font-size: 30px;
+	color: white;
+} 
+ 
+.img-main {
+	display: flex;
+	background-image: url("../images/img-story-main.png");
+	height: 300px;
+	font-size: 40px;
+}
+
+.img-1 {
+	display: flex;
+	background-image: url("../images/img-story-1.png");
+	height: 300px;
+}
+
+.img-2 {
+	display: flex;
+	background-image: url("../images/img-story-2.png");
+	height: 300px;
+}
+
+.img-3 {
+	display: flex;
+	background-image: url("../images/img-story-3.png");
+	height: 300px;
 }
